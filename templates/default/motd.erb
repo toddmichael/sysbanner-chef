@@ -1,13 +1,13 @@
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: NODE NAME:       <%= node.name %>
-:: INSTANCE TYPE:   <%= node[:sysbanner][:instance_type] %>
+:: INSTANCE TYPE:   <%= @conf[:instance_type] %>
 :: KERNEL:          <%= node.kernel.release %>
 :: OS:              <%= node.platform %> <%= node.platform_version %>
 :: UPTIME:          <%= node.uptime %>
-:: SECURITY GROUPS: <%= node[:sysbanner][:security_groups].join(',') %>
-:: PRIVATE IP:      <%= node[:sysbanner][:local_ipv4] %>
-:: PUBLIC IP:       <%= node[:sysbanner][:public_ipv4] %>
+:: SECURITY GROUPS: <%= @conf[:security_groups].join(',') %>
+:: PRIVATE IP:      <%= @conf[:local_ipv4] %>
+:: PUBLIC IP:       <%= @conf[:public_ipv4] %>
 :: CHEF VERSION:    <%= node.chef_packages.chef.version %>
 :: CHEF ENV:        <%= node.chef_environment %>
 :: CHEF RUN_LIST:   <%= node.run_list %>
