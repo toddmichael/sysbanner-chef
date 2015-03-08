@@ -6,7 +6,7 @@
 case node[:platform_family]
 when 'debian'
   motd_file = '/etc/motd.tail'
-else 
+else
   motd_file = '/etc/motd'
 end
 
