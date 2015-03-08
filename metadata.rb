@@ -5,4 +5,5 @@ description      'Distribute system banner files'
 description      'Distribute system banner files'
 version          '0.1.0'
 
-depends 'motd'
+supports 'centos'
+supports 'ubuntu', '>= 14.04'
