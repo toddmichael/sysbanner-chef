@@ -1,7 +1,9 @@
 default[:sysbanner][:org_name] = 'Little Company, Inc'
 
-# AWS attributes
-default[:sysbanner][:instance_type] = 't1.micro'
-default[:sysbanner][:security_groups] = %w(group-1 group-2)
-default[:sysbanner][:private_ip] = '192.168.0.253'
-default[:sysbanner][:public_ip] = '172.16.0.253'
+# Placeholder attributes (to be defined in wrappers)
+# TODO: add sane defaults based on conditions
+default[:sysbanner][:instance_id] = 'none'
+default[:sysbanner][:instance_type] = 'none'
+default[:sysbanner][:security_groups] = %w(none).join(',')
+default[:sysbanner][:private_ips] = %w(none).join(',')
+default[:sysbanner][:public_ips] = %w(none).join(',')
