@@ -1,6 +1,8 @@
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: NODE NAME:       <%= node.name %>
+:: NODE FQDN:       <%= node.fqdn %>
+:: MACHINE NAME:    <%= @conf[:machine_name] %>
 :: INSTANCE ID:     <%= @conf[:instance_id] %>
 :: INSTANCE TYPE:   <%= @conf[:instance_type] %>
 :: KERNEL:          <%= node.kernel.release %>
