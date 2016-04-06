@@ -2,15 +2,15 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: NODE NAME:       <%= node.name %>
 :: NODE FQDN:       <%= node.fqdn %>
-:: MACHINE NAME:    <%= @conf[:machine_name] %>
-:: INSTANCE ID:     <%= @conf[:instance_id] %>
-:: INSTANCE TYPE:   <%= @conf[:instance_type] %>
+:: MACHINE NAME:    <%= @conf['machine_name'] %>
+:: INSTANCE ID:     <%= @conf['instance_id'] %>
+:: INSTANCE TYPE:   <%= @conf['instance_type'] %>
 :: KERNEL:          <%= node.kernel.release %>
 :: OS:              <%= node.platform %> <%= node.platform_version %>
 :: UPTIME:          <%= node.uptime %>
-:: SECURITY GROUPS: <%= @conf[:security_groups] %>
-:: PRIVATE IPs:     <%= @conf[:private_ips] %>
-:: PUBLIC IPs:      <%= @conf[:public_ips] %>
+:: SECURITY GROUPS: <%= @conf['security_groups'] %>
+:: PRIVATE IPs:     <%= @conf['private_ips'] %>
+:: PUBLIC IPs:      <%= @conf['public_ips'] %>
 :: CHEF VERSION:    <%= node.chef_packages.chef.version %>
 :: CHEF ENV:        <%= node.chef_environment %>
 :: CHEF RUN_LIST:   <%= node.run_list %>
