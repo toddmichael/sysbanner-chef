@@ -3,7 +3,7 @@
 # Recipe:: motd
 #
 
-case node[:platform_family]
+case node['platform_family']
 when 'debian'
   motd_file = '/etc/motd.tail'
 else
@@ -14,7 +14,7 @@ template motd_file do
   source 'motd.erb'
   mode 00644
   variables(
-    conf: node[:sysbanner]
+    conf: node['sysbanner']['motd']
   )
 end
 
